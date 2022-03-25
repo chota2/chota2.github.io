@@ -3,31 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 토스트 UI -->
-    <script src="https://uicdn.toast.com/tui-app-loader/latest/tui-app-loader.js"></script>
     <title>MY Document</title>
+<style>
+    .container {
+        width: 20em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box1{
+        background-color: brown;
+        border-color: blue;
+        border-width: 20px 10px;
+    }
+    .grid {
+        display: grid;
+        
+        grid-template-columns: minmax(20px, 1fr) repeat(10, minmax(0, 60px)) minmax(20px, 1fr);
+        grid-gap: 10px;
+    }
+
+    .full-width {
+        grid-column: 1 / -1;
+    }
+
+    .wrapper {
+        grid-column: 2 / -2;
+    }
+
+    .left-edge {
+        grid-column: 1 / -2;
+    }
+
+    .right-wrapper {
+        grid-column: 2 / 12;
+    }
+</style>
 </head>
 <body>
-    <div><a href="highchartGrantt.html">HighChart-Gantt</a>https://www.highcharts.com/</div>
-    <div><a href="http://jgraph.github.io/mxgraph/">mxGraph</a></div>
-    <div><a href="header.html">1header</a></div>
-    <div><a href="">sass</a></div>
-    <div><a href="">ui</a></div>
-    <div><a href="">vscode</a></div>
-    <div><a href="">ES</a></div>
-    <div><a href="">node</a></div>
-    <div><a href="">kor</a></div>
-    <div><a href="">react</a></div>
-    <div><a href="">d3</a></div>
-    <div><a href="">gojs</a></div>
-    <div><a href="">jointjs</a></div>
-    <div><a href="">webgl</a></div>
-    <div><a href="">spring</a></div>
-    <div><a href="">java</a></div>
-    <div><a href="">opencv</a></div>
-    <div><a href="">웹팩</a></div>
-    <div><a href="">큐브리드</a></div>
+    <div class="box1">fdjfsk</div>
+    <div style="border: 10px solid green;" class="grid">
 
+        <div style="border: 4px solid red;" class="wrapper">
+          <p>This item aligns to a central “wrapper” – columns that have a maximum width.</p>
+        </div>
+    
+        <div style="border: 4px solid red;" class="full-width">
+          <p>full-width This item aligns to the edge of the grid container.</p>
+        </div>
+    
+        <div style="border: 4px solid red;" class="left-edge">
+          <p>This item aligns to the left edge of the grid container and the right edge of the wrapper.</p>
+        </div>
+    
+        <div style="border: 4px solid red;" class="right-wrapper">
+          <p>This item aligns to the right edge of the “wrapper” columns.</p>
+        </div>
+    
+    </div>
+
+    <!-- <div class="container" >
+        <ul>
+            <li>CSS</li>
+                <ul>
+                    <li>tag</li>
+                    <li>box</li>
+                    <li>size</li>
+                    <li>selector</li>
+                        <ul>
+                            <li>선택자1</li>
+                        </ul>
+                    <li>position</li>
+
+                    <li>display</li>
+                </ul>
+            <li>bootstrap</li>
+            <li>javascript</li>
+            <li>docs</li>
+        </ul>
+    </div> -->
 
 </body>
 </html>
