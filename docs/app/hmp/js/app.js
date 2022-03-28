@@ -1,3 +1,5 @@
+import { header } from './inc/header.js';
+
 function includeHTML(){
   const includeArea = document.querySelectorAll('[data-include]');
 
